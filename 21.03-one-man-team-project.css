@@ -1,58 +1,92 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
-
 body {
+    font-family: Arial;
+    color: rgba(71, 40, 40, 0.86);;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-min-width: 375px;
+    min-width: 375px;
+    background-color: #9FC2C4;
 
 }
 
 header {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 
 h1 {
-    font-size: 60px;
-    background-color: red;
+    font-size: 100px;
+    padding: 10px;
+    background-color: #9FC2C4;
+    color: rgba(0, 0, 0, 0.05);
+    text-shadow: 0 5px 5px #eee;
     text-align: center;
     margin: 0 auto;
+
+}
+
+h2 {
+    text-align: left;
+    font-size: 40px;
+    border-bottom: 1px solid rgba(71, 40, 40, 0.86);
+    margin-bottom: 20px;
 }
 
 nav ul {
+
     padding: 0;
     margin: 0 auto;
-
+    margin-left: 33%;
+    text-align: left;
 }
 
-
+section p {
+    text-align: left;
+}
 
 nav li {
+    letter-spacing: 1px;
+    border-radius: 20px;
+    color: white;
     font-size: 18px;
     display: inline-block;
-    margin: 0 3%;
+    margin-right: 3%;
+    padding: 0.5% 1%;
+    border: 1px solid rgba(68, 179, 196, 0.5);
+    background: rgba(68, 179, 196, 0.5);
     /*display: none;*/
 }
 
+nav li:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
 nav {
-    background-color: blue;
+    background-color: #9FC2C4;
+    /*padding: 10px;*/
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 
 aside {
-    width: 21%;
+    border-radius: 10px;
+    width: 15%;
     padding: 1%;
-    margin: 0 0 0 10%;
-    background-color: yellow;
+    margin: 20px 0 0 10%;
+    background-color: rgba(68, 179, 196, 0.5);
+    text-align: left;
+    height: 50%;
 }
 
 section {
-    background-color: green;
+    margin: 0 auto 100px auto;
+
 }
 
 main {
@@ -62,149 +96,237 @@ main {
 
 }
 
-li>img {
-    width: 100%;
+.hero-pic {
+   width: 200px;
+    height: 200px;
 }
 
 section ul {
-    display: block;
+    list-style: none;
+    /*display: block;*/
     text-align: left;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 section li {
-    width: 17%;
-    margin: 0 3%;
-    display: inline-block;
+    width: 200px;
+    /*height:20%;*/
+    vertical-align: top;
+    /*margin: 0 3%;*/
+
 }
 
-#nav-icon{
-    padding: 10px;
+#nav-icon {
+    /*padding: 10px;*/
     float: left;
     width: 95%;
 }
 
-i{
+i {
+    display: none;
+    padding: 0.5%;
     float: left;
+    padding-left: 11%;
+    font-size: 30px;
+    line-height: 20px;
+    display: none;
 }
 
-#template{
+i:hover {
+    cursor: pointer;
+}
+
+#faceless-cotainer {
+    margin-right: 100%;
 
     float: left;
     width: 300px;
-    height: 300px;
+    height: 350px;
     /*width: 40%;*/
     /*height: 40%;*/
 }
 
+aside p {
+    display: block;
+    text-align: left;
+    width: 90%;
+    /*font-size: 12px*/
+}
 
-#nakov{
+#nakov {
     margin: 0;
     position: absolute;
     display: none;
     width: 250px;
     left: 25px;
-    top: 0px;
+    top: 20px;
 }
 
-#yonkov{
+#yonkov {
     margin: 0;
     position: absolute;
     display: none;
     width: 140px;
     left: 80px;
-    top: 0px;
+    top: 20px;
 }
 
-#georgiev{
+#georgiev {
     margin: 0;
     position: absolute;
     display: none;
     width: 250px;
     left: 25px;
-    top: 0px;
+    top: 20px;
 }
 
-#darakchiev{
+#darakchiev {
     margin: 0;
     position: absolute;
     display: none;
     width: 250px;
     left: 16px;
-    top: -32px;
+    top: -12px;
 }
 
-#hat-1{
+#hat-1 {
     margin: 0;
     position: absolute;
     display: none;
     width: 250px;
     left: -9px;
-    top: -147px;
+    top: -490px;
 }
 
-#hat-3{
-    margin: 0;
-    position: absolute;
-    display: none;
-    width: 250px;
-    left: 16px;
-    top: -172px;
-}
-
-#hat-2{
+#hat-2 {
     margin: 0;
     position: absolute;
     display: none;
     width: 250px;
     left: 22px;
-    top: -156px;
+    top: -490px;
 }
 
-section>article>div{
+#hat-3 {
+    margin: 0;
+    position: absolute;
+    display: none;
+    width: 250px;
+    left: 16px;
+    top: -513px;
+}
+
+#glasses-1 {
+    margin: 0;
+    position: absolute;
+    display: none;
+    width: 250px;
+    left: 16px;
+    top: -152px;
+}
+
+#glasses-2 {
+    margin: 0;
+    position: absolute;
+    display: none;
+    width: 250px;
+    left: 16px;
+    top: -152px;
+}
+
+section > article > div {
     display: block;
     text-align: left;
-    padding:5px;
+    padding: 5px;
 }
-section>article{
+
+section > article {
     position: relative;
     /*border: 1px solid blue;*/
 }
 
-#nakov-radio:checked{
-    background-color: red;
+button{
+    color: white;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    background: linear-gradient(#9FC2C4,#000001);
+    border-radius: 0 200px 0 200px;
+
+}
+button:hover{
+    cursor: pointer;
 }
 
+footer{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 25px;
+}
 
-
-@media all and (max-width: 600px) {
-    .nav-class {
-        display: none;
+/*#nakov-radio:checked {*/
+    /*background-color: red;*/
+/*}*/
+@media all and (max-width: 900px) {
+    h1{
+        font-size:80px;
     }
-    #nav-icon{
-        float: left;
-        padding-bottom: 10px;
-    }
-    #nav-icon:hover .nav-class{
-        display: block;
-        background-color: red;
+    header {
+        order: 1
     }
 
-    header{
-        order:1
-    }
-    nav{
+    nav {
         order: 2;
     }
-    main{
+
+    main {
         width: 80%;
         margin: 0 auto;
         order: 3;
     }
-    aside{
+
+    aside {
         text-align: justify;
-        margin: 0 auto ;
+        margin: 0 auto;
         width: 80%;
         order: 4;
     }
+
+    footer{
+        order: 5;
+    }
+
+    nav ul {
+        margin: 0 auto;
+        margin-left: 10%;
+        text-align: left;
+    }
 }
+
+@media all and (max-width: 600px) {
+    h1{
+        font-size:60px;
+    }
+    .nav-class {
+        display: none;
+    }
+
+    #nav-icon {
+        float: left;
+        padding-bottom: 10px;
+    }
+
+    #nav-icon:hover .nav-class {
+        display: block;
+        /*background-color: #58fdff;*/
+    }
+
+}
+
+
