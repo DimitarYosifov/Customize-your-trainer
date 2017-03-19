@@ -7,7 +7,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+
     min-width: 375px;
     background-color: #9FC2C4;
 
@@ -30,9 +30,10 @@ h1 {
 }
 
 h2 {
+    padding-bottom: 10px;
     text-align: left;
     font-size: 40px;
-    border-bottom: 1px solid rgba(71, 40, 40, 0.86);
+    border-bottom: 3px dotted rgba(71, 40, 40, 0.86);
     margin-bottom: 20px;
 }
 
@@ -46,19 +47,27 @@ nav ul {
 
 section p {
     text-align: left;
+    letter-spacing: 2px;
+    font-style: oblique;
 }
 
 nav li {
+    text-align: center;
+    border-radius: 0 200px 0 200px;
     letter-spacing: 1px;
-    border-radius: 20px;
     color: white;
     font-size: 18px;
     display: inline-block;
     margin-right: 3%;
-    padding: 0.5% 1%;
+    padding: 1% 2%;
     border: 1px solid rgba(68, 179, 196, 0.5);
     background: rgba(68, 179, 196, 0.5);
     /*display: none;*/
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
 }
 
 nav li:hover {
@@ -85,7 +94,7 @@ aside {
 }
 
 section {
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
 
 }
 
@@ -126,14 +135,16 @@ section li {
     width: 95%;
 }
 
-i {
-    display: none;
+.fa{
+    font-size: 30px;
+}
+i{
     padding: 0.5%;
     float: left;
     padding-left: 11%;
     font-size: 30px;
     line-height: 20px;
-    display: none;
+
 }
 
 i:hover {
@@ -142,7 +153,7 @@ i:hover {
 
 #faceless-cotainer {
     margin-right: 100%;
-
+background: url("imagess/shutterstock_529665652.tif");
     float: left;
     width: 300px;
     height: 350px;
@@ -251,8 +262,10 @@ section > article {
 
 button{
     color: white;
+    outline: none;
     border: none;
-    width: 20%;
+    width: 150px;
+    margin-left: 30%;
     padding: 10px;
     font-size: 20px;
     background: linear-gradient(#9FC2C4,#000001);
@@ -268,6 +281,7 @@ footer{
     color: white;
     width: 100%;
     padding: 25px;
+    text-align: center;
 }
 
 /*#nakov-radio:checked {*/
@@ -283,6 +297,7 @@ footer{
 
     nav {
         order: 2;
+        margin: 0 auto;
     }
 
     main {
@@ -298,18 +313,31 @@ footer{
         order: 4;
     }
 
+    h2{
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
     footer{
         order: 5;
     }
 
     nav ul {
         margin: 0 auto;
-        margin-left: 10%;
-        text-align: left;
+        margin-left: 18%;
+    }
+    .fa{
+        line-height: 25px;
+    }
+    section{
+        margin: 0 auto 20px auto;
+    }
+    aside{
+        margin: 20px auto;
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 609px) {
     h1{
         font-size:60px;
     }
