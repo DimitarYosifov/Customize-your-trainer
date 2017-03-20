@@ -7,8 +7,8 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
-    min-width: 375px;
+    font-size: 16px;
+    /*min-width: 320px;*/
     background-color: #9FC2C4;
 
 }
@@ -65,9 +65,13 @@ nav li {
     /*display: none;*/
 }
 
-nav li a{
+nav li a {
     color: white;
     text-decoration: none;
+}
+
+.characters-paragraph{
+    width: 180px;
 }
 
 nav li:hover {
@@ -106,7 +110,7 @@ main {
 }
 
 .hero-pic {
-   width: 200px;
+    width: 180px;
     height: 200px;
 }
 
@@ -135,10 +139,11 @@ section li {
     width: 95%;
 }
 
-.fa{
+.fa {
     font-size: 30px;
 }
-i{
+
+i {
     padding: 0.5%;
     float: left;
     padding-left: 11%;
@@ -152,8 +157,11 @@ i:hover {
 }
 
 #faceless-cotainer {
-    margin-right: 100%;
-background: url("imagess/shutterstock_529665652.tif");
+    position: relative;
+    /*margin-right: 100%;*/
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: url("imagess/shutterstock_529665652.png");
     float: left;
     width: 300px;
     height: 350px;
@@ -172,36 +180,36 @@ aside p {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 25px;
-    top: 20px;
+
+    left: 50px;
+    top: -10px;
 }
 
 #yonkov {
     margin: 0;
     position: absolute;
     display: none;
-    width: 140px;
-    left: 80px;
-    top: 20px;
+
+    left: 70px;
+    top: -10px;
 }
 
 #georgiev {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 25px;
-    top: 20px;
+
+    left: 50px;
+    top: 0px;
 }
 
 #darakchiev {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 16px;
-    top: -12px;
+
+    left: 45px;
+    top: -40px;
 }
 
 #hat-1 {
@@ -209,74 +217,77 @@ aside p {
     position: absolute;
     display: none;
     width: 250px;
-    left: -9px;
-    top: -490px;
+    left: 50px;
+    top: -60px;
 }
 
 #hat-2 {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 22px;
-    top: -490px;
+
+    left: 60px;
+    top: -60px;
 }
 
 #hat-3 {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 16px;
-    top: -513px;
+
+    left: 60px;
+    top: -65px;
 }
 
 #glasses-1 {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 16px;
-    top: -152px;
+    width: 60px;
+    left: 83px;
+    top: 63px;
 }
 
 #glasses-2 {
     margin: 0;
     position: absolute;
     display: none;
-    width: 250px;
-    left: 16px;
-    top: -152px;
+    width: 60px;
+    left: 83px;
+    top: 63px;
 }
 
 section > article > div {
     display: block;
     text-align: left;
-    padding: 5px;
+    padding: 5px 5px 5px 70%;
 }
 
 section > article {
     position: relative;
+    margin-bottom: 20px;
     /*border: 1px solid blue;*/
 }
 
-button{
+button {
     color: white;
     outline: none;
     border: none;
     width: 150px;
-    margin-left: 30%;
+    margin-left: 70%;
+    margin-top: 20px;
     padding: 10px;
     font-size: 20px;
-    background: linear-gradient(#9FC2C4,#000001);
+    background: linear-gradient(#9FC2C4, #000001);
     border-radius: 0 200px 0 200px;
 
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
 }
 
-footer{
+footer {
     background: black;
     color: white;
     width: 100%;
@@ -285,12 +296,13 @@ footer{
 }
 
 /*#nakov-radio:checked {*/
-    /*background-color: red;*/
+/*background-color: red;*/
 /*}*/
 @media all and (max-width: 900px) {
-    h1{
-        font-size:80px;
+    h1 {
+        font-size: 80px;
     }
+
     header {
         order: 1
     }
@@ -313,12 +325,12 @@ footer{
         order: 4;
     }
 
-    h2{
+    h2 {
         margin-bottom: 10px;
         margin-top: 0px;
     }
 
-    footer{
+    footer {
         order: 5;
     }
 
@@ -326,21 +338,33 @@ footer{
         margin: 0 auto;
         margin-left: 18%;
     }
-    .fa{
+
+    .fa {
         line-height: 25px;
     }
-    section{
+
+    section {
         margin: 0 auto 20px auto;
     }
-    aside{
+
+    aside {
         margin: 20px auto;
     }
 }
 
-@media all and (max-width: 609px) {
-    h1{
-        font-size:60px;
+@media all and (max-width: 624px) {
+    section > article > div {
+        padding-left: 100px;
     }
+
+    #faceless-cotainer {
+        margin-right: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
     .nav-class {
         display: none;
     }
@@ -352,9 +376,13 @@ footer{
 
     #nav-icon:hover .nav-class {
         display: block;
+        margin-bottom: 5px;
         /*background-color: #58fdff;*/
     }
 
+    button {
+       margin-left: 100px;
+    }
 }
 
 
