@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-size: 16px;
-    /*min-width: 320px;*/
     background-color: #9FC2C4;
 
 }
@@ -26,7 +25,6 @@ h1 {
     text-shadow: 0 5px 5px #eee;
     text-align: center;
     margin: 0 auto;
-
 }
 
 h2 {
@@ -38,7 +36,6 @@ h2 {
 }
 
 nav ul {
-
     padding: 0;
     margin: 0 auto;
     margin-left: 33%;
@@ -62,7 +59,6 @@ nav li {
     padding: 1% 2%;
     border: 1px solid rgba(68, 179, 196, 0.5);
     background: rgba(68, 179, 196, 0.5);
-    /*display: none;*/
 }
 
 nav li a {
@@ -74,15 +70,13 @@ nav li a {
     width: 180px;
 }
 
-nav li:hover {
+nav li a:hover {
     color: black;
     cursor: pointer;
-
 }
 
 nav {
     background-color: #9FC2C4;
-    /*padding: 10px;*/
     width: 100%;
     margin: 0 auto 50px auto;
 }
@@ -99,14 +93,12 @@ aside {
 
 section {
     margin: 0 auto 50px auto;
-
 }
 
 main {
     width: 50%;
     margin-left: 5%;
     margin-right: 4%;
-
 }
 
 .hero-pic {
@@ -116,25 +108,19 @@ main {
 
 section ul {
     list-style: none;
-    /*display: block;*/
     text-align: left;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 section li {
     width: 200px;
-    /*height:20%;*/
     vertical-align: top;
-    /*margin: 0 3%;*/
-
 }
 
 #nav-icon {
-    /*padding: 10px;*/
     float: left;
     width: 95%;
 }
@@ -149,7 +135,6 @@ i {
     padding-left: 11%;
     font-size: 30px;
     line-height: 20px;
-
 }
 
 i:hover {
@@ -158,29 +143,24 @@ i:hover {
 
 #faceless-cotainer {
     position: relative;
-    /*margin-right: 100%;*/
     margin-top: 50px;
     margin-bottom: 20px;
     background: url("imagess/shutterstock_529665652.png");
     float: left;
     width: 300px;
     height: 350px;
-    /*width: 40%;*/
-    /*height: 40%;*/
 }
 
 aside p {
     display: block;
     text-align: left;
     width: 90%;
-    /*font-size: 12px*/
 }
 
 #nakov {
     margin: 0;
     position: absolute;
     display: none;
-
     left: 50px;
     top: -10px;
 }
@@ -189,7 +169,6 @@ aside p {
     margin: 0;
     position: absolute;
     display: none;
-
     left: 70px;
     top: -10px;
 }
@@ -207,7 +186,6 @@ aside p {
     margin: 0;
     position: absolute;
     display: none;
-
     left: 45px;
     top: -40px;
 }
@@ -225,7 +203,6 @@ aside p {
     margin: 0;
     position: absolute;
     display: none;
-
     left: 60px;
     top: -60px;
 }
@@ -234,7 +211,6 @@ aside p {
     margin: 0;
     position: absolute;
     display: none;
-
     left: 60px;
     top: -65px;
 }
@@ -266,7 +242,6 @@ section > article > div {
 section > article {
     position: relative;
     margin-bottom: 20px;
-    /*border: 1px solid blue;*/
 }
 
 button {
@@ -280,7 +255,6 @@ button {
     font-size: 20px;
     background: linear-gradient(#9FC2C4, #000001);
     border-radius: 0 200px 0 200px;
-
 }
 
 button:hover {
@@ -295,9 +269,6 @@ footer {
     text-align: center;
 }
 
-/*#nakov-radio:checked {*/
-/*background-color: red;*/
-/*}*/
 @media all and (max-width: 900px) {
     h1 {
         font-size: 80px;
@@ -377,7 +348,6 @@ footer {
     #nav-icon:hover .nav-class {
         display: block;
         margin-bottom: 5px;
-        /*background-color: #58fdff;*/
     }
 
     button {
